@@ -1,5 +1,4 @@
 import HeadingTextAnimated from "../work/HeadingText"
-import GridLayout from "./GridLayout"
 import HeadingText from "./HeadingText"
 import SubHeadingText from "./SubHeadingText"
 
@@ -9,7 +8,6 @@ function Showcase() {
       <HeadingText />
       <HeadingTextAnimated />
       <SubHeadingText />
-      <GridLayout />
     </div>
   )
 }

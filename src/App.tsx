@@ -18,17 +18,18 @@ function App() {
   return (
     <div className="antialiased bg-white dark:bg-[#0d121c] min-h-screen">
       <Header />
-
       <Routes>
         {/* Main page components */}
         <Route path="/" element={
           <>
             <Showcase />
             <ProfileTagMarquee />
-            <div className="gridLinesBg px-4 md:px-20 flex flex-col gap-8">
-              <Expertise />
-              <Projects />
-              <Contact />
+            <div className="gridLinesBg px-4 md:px-20 flex flex-col gap-8 w-full items-center">
+              <div className="w-fit">
+                <Expertise />
+                <Projects />
+                <Contact />
+              </div>
             </div>
             <Footer />
           </>

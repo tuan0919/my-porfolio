@@ -5,6 +5,7 @@ import './index.css'
 import { ThemeProvider } from "./components/theme-provider.tsx"
 import { BrowserRouter as Router } from 'react-router-dom';
 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider

@@ -4,11 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   transition: all 0.3s ease-in-out;
 }
 
 @layer base {
+  ::selection {
+    background-color: #FFDB00;
+    color: #000000;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -40,6 +46,7 @@ html, body {
     --dot-color: #000000;
     --resume-dot-bg: #FFFFFF;
   }
+
 
   .dark {
     --background: 240 10% 3.9%;
@@ -77,6 +84,7 @@ html, body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -88,7 +96,7 @@ html, body {
 
 .gridLinesBg {
   background-size: 35px 35px;
-  background-image: 
+  background-image:
     linear-gradient(to right, var(--grid-line-color), 0.3px, transparent 1px),
     linear-gradient(to bottom, var(--grid-line-color), 0.3px, transparent 1px);
 }
@@ -98,10 +106,10 @@ html, body {
   color: var(--dot-color);
   --dot-size: 1px;
   --dot-space: 15px;
-	background:
-		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-		var(--dot-color);
+  background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
 }
 
 .gridDotResume {
@@ -109,8 +117,8 @@ html, body {
   color: var(--dot-color);
   --dot-size: 1px;
   --dot-space: 15px;
-	background:
-		linear-gradient(90deg, var(--resume-dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-		linear-gradient(var(--resume-dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-		var(--dot-color);
+  background:
+    linear-gradient(90deg, var(--resume-dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--resume-dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
 }

@@ -34,8 +34,8 @@ function Header() {
             return (
               <div
                 key={index}
-                className={`flex capitalize cursor-pointer text-sm px-3 py-1.5 rounded-sm font-ubuntu transition-all duration-200
-                  ${isActive ? "bg-[#FFDB00] text-black" : "hover:bg-zinc-100 dark:hover:bg-gray-800"}
+                className={`flex capitalize cursor-pointer border-2 text-sm px-3 py-1.5 rounded-sm font-ubuntu transition-all duration-200
+                  ${isActive ? "bg-[#FFDB00] border-black dark:border-transparent text-black" : "hover:bg-zinc-100 border-transparent dark:hover:bg-gray-800"}
                 `}
               >
                 <a href={link.to} className="">{link.title}</a>
@@ -55,7 +55,12 @@ function Header() {
         </Link>
         <Link
           to="/resume"
-          className="flex items-center gap-2 text-black bg-[#FFDB00] hover:bg-opacity-90 font-lato font-medium rounded-md py-1 px-2.5"
+          className="
+          flex items-center 
+          gap-2 text-black bg-[#FFDB00] 
+          hover:bg-opacity-90 font-lato font-medium rounded-md 
+          border-2 border-black dark:border-transparent
+          py-1 px-2.5"
         >
           Resume
           <ArrowUpRight className="bg-black text-[#FFDB00] p-1 rounded-full" />
@@ -117,10 +122,10 @@ function Header() {
               {/** theme and social icons */}
               <div className="flex items-center justify-center gap-4 w-full mt-4">
                 <ThemeToggle />
-                <a href="https://github.com/1999-sahil" target="_blank" className="hover:bg-zinc-200 dark:hover:bg-gray-800 transition-transform duration-300 ease-in-out rounded-md flex items-center justify-center w-[2.2rem] h-[2.2rem]">
+                <a href="https://github.com/tuan0919" target="_blank" className="hover:bg-zinc-200 dark:hover:bg-gray-800 transition-transform duration-300 ease-in-out rounded-md flex items-center justify-center w-[2.2rem] h-[2.2rem]">
                   <FaGithub className="w-[1.2rem] h-[1.2rem] text-zinc-800 dark:text-white" />
                 </a>
-                <a href="www.linkedin.com/in/sahil-ahmed-86222718a" target="_blank" className="hover:bg-zinc-200 dark:hover:bg-gray-800 transition-transform duration-300 ease-in-out rounded-md flex items-center justify-center w-[2.2rem] h-[2.2rem]">
+                <a href="https://www.linkedin.com/in/nqat" target="_blank" className="hover:bg-zinc-200 dark:hover:bg-gray-800 transition-transform duration-300 ease-in-out rounded-md flex items-center justify-center w-[2.2rem] h-[2.2rem]">
                   <FaLinkedin className="w-[1.2rem] h-[1.2rem] text-zinc-700 dark:text-white" />
                 </a>
               </div>

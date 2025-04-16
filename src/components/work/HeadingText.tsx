@@ -17,7 +17,7 @@ function HeadingTextAnimated() {
       text: "problem.",
     },
     {
-      text: "Then",
+      text: "Then,",
     },
     {
       text: "write",
