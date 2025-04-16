@@ -4,7 +4,7 @@ import Skills from "./Skills";
 
 function Expertise() {
   return (
-    <div id="expertise" className="w-full h-full my-10 md:px-20">
+    <div id="expertise" className="w-full h-full">
       <TitleText
         title="What i can do"
         description={`
@@ -19,7 +19,9 @@ function Expertise() {
         {cards.map((card, index) => {
           return (
             <div key={index} className="relative inline-block group">
-              <span className={`absolute dark:hidden rounded-2xl inset-0 w-full h-full transition duration-200 ease-out transform translate-x-[5px] translate-y-[5px] ${card.borderColor} group-hover:-translate-x-0 group-hover:-translate-y-0`}></span>
+              <span
+                className={`absolute dark:hidden rounded-2xl inset-0 w-full h-full transition duration-200 ease-out transform translate-x-[5px] translate-y-[5px] ${card.borderColor} group-hover:-translate-x-0 group-hover:-translate-y-0`}
+              ></span>
               <div
                 //key={index}
                 className={`relative flex items-center border rounded-xl px-2 

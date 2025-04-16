@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react";
 import lightImg from "../../assets/project/lightArrow.svg";
 import darkImg from "../../assets/project/darkArrow.svg";
 import TitleText from "../title-text";
@@ -28,14 +28,20 @@ function Contact() {
 
         {/** project button */}
         <a href="mailto:nqat0919@gmail.com?subject=Hi Tuan&body=I want to contact with you for...">
-          <button className="flex items-center gap-2 bg-[#FFDB00] text-black hover:opacity-95 font-montserrat font-medium text-base rounded p-2">
+          <button
+            className="flex items-center gap-2
+           bg-[#FFDB00] text-black hover:opacity-95
+            font-montserrat font-medium
+            border-2 border-black dark:border-transparent
+            text-base rounded p-2"
+          >
             Contact me
             <ArrowUpRight className="text-[#FFDB00] bg-black rounded-full w-fit p-1" />
           </button>
         </a>
       </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

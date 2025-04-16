@@ -9,7 +9,13 @@ import { CircleIcon } from "./CircleIcon";
 
 function Skills() {
   return (
-    <div className="relative h-full p-10 px-20 bg-zinc-200 dark:bg-gray-900 border-2 border-black dark:border-zinc-500 border-dashed rounded-xl">
+    <div
+      className="relative h-full py-10 
+      px-4 lg:px-20
+     bg-zinc-200 dark:bg-gray-900 border-2
+      border-black dark:border-zinc-500
+       border-dashed rounded-xl"
+    >
       <CircleIcon className="absolute bg-[#FFDB00] -right-[2px] -top-[2px]" />
       <CircleIcon className="absolute bg-[#FFDB00] -bottom-[2px] -right-[2px]" />
       <CircleIcon className="absolute bg-[#FFDB00] -left-[2px] -top-[2px]" />

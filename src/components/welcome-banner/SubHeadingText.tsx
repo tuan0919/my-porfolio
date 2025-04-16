@@ -21,7 +21,7 @@ function SubHeadingText() {
             Github
           </button>
         </a>
-        <Link to="/projects">
+        <Link to="/#projects">
           <button className="flex border-2 border-black dark:border-transparent items-center justify-center rounded-md gap-2 hover:bg-opacity-90 bg-[#FFDB00] text-black font-lato text-sm md:text-base font-medium px-2 py-1 lg:px-4 lg:py-2 w-full md:w-auto">
             See my work
             <ArrowUpRight className="bg-black rounded-full p-1 text-[#FFDB00]" />

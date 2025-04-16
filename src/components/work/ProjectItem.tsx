@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 
-export const BentoGrid = ({
+export const ProjectGrid = ({
   className,
   children,
 }: {
@@ -20,7 +20,7 @@ export const BentoGrid = ({
   );
 };
 
-export const BentoGridItem = ({
+export const ProjectGridItem = ({
   className,
   title,
   description,
@@ -55,7 +55,11 @@ export const BentoGridItem = ({
       </div>
       <div className="transition duration-200 flex-1 flex flex-col justify-between">
         <div className="flex flex-col">
-          <a href={link} target="_blank" className="hover:underline flex items-center gap-2">
+          <a
+            href={link}
+            target="_blank"
+            className="hover:underline flex items-center gap-2"
+          >
             <div className="flex items-center justify-center bg-black dark:bg-transparent p-1 rounded-md">
               {icon}
             </div>
@@ -72,8 +76,11 @@ export const BentoGridItem = ({
         </div>
         <div className="flex gap-2 py-2">
           {stack?.map((str, index) => (
-            <div key={index} className="bg-[#FFDB00] border-black dark:border-[#d6d6d6] dark:bg-transparent w-[2rem] h-[2rem] transition duration-200 cursor-pointer flex items-center justify-center rounded-sm border-2 hover:border-transparent dark:hover:border-transparent">
-              <img src={str} width={'90%'} height={'90%'} />
+            <div
+              key={index}
+              className="bg-[#FFDB00] border-black dark:border-[#d6d6d6] dark:bg-transparent w-[2rem] h-[2rem] transition duration-200 cursor-pointer flex items-center justify-center rounded-sm border-2 hover:border-transparent dark:hover:border-transparent"
+            >
+              <img src={str} width={"90%"} height={"90%"} />
             </div>
           ))}
         </div>

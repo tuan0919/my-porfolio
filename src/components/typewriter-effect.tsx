@@ -155,12 +155,7 @@ export const TypewriterEffectSmooth = ({
           delay: 1,
         }}
       >
-        <div
-          className="text-center font-montserrat font-black text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl"
-          style={{
-            whiteSpace: "nowrap",
-          }}
-        >
+        <div className="text-center font-montserrat font-black text-3xl text-wrap sm:text-nowrap sm:text-base md:text-xl lg:text:3xl xl:text-5xl">
           {renderWords()}{" "}
         </div>
       </motion.div>

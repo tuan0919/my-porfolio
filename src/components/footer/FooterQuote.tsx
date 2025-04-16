@@ -1,4 +1,4 @@
-import { ArrowUpRight, Grip } from "lucide-react"
+import { ArrowUpRight, Grip } from "lucide-react";
 
 function FooterQuote() {
   return (
@@ -8,12 +8,14 @@ function FooterQuote() {
           <Grip className="text-black w-5 h-5" />
           <ArrowUpRight className="text-[#FFDB00] bg-black rounded-full p-1" />
         </div>
-        <h2 className='text-xs md:text-sm lg:text-base font-lato font-medium text-black text-center'>
-          A Frontend focussed Web Developer building the Frontend of Websites and Web Applicatins that leads to the success of the overall product.
+        <h2 className="text-xs md:text-sm lg:text-base font-lato font-medium text-black text-center">
+          A Full Stack Web Developer crafting both the frontend and backend of
+          websites and web applications to deliver complete, functional, and
+          user-centric digital experiences.
         </h2>
       </div>
     </div>
-  )
+  );
 }
 
-export default FooterQuote
+export default FooterQuote;

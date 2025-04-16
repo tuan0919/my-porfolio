@@ -1,35 +1,35 @@
-import { BentoGrid, BentoGridItem } from "../bento-grid";
 // Import Icons for Backend
-import javaIcon from '../../assets/skills/backend/java.png';
-import springBootIcon from '../../assets/skills/backend/springboot.png';
-import mysqlIcon from '../../assets/skills/backend/mysql.png';
-import redisIcon from '../../assets/skills/backend/redis.png';
+import javaIcon from "../../assets/skills/backend/java.png";
+import springBootIcon from "../../assets/skills/backend/springboot.png";
+import mysqlIcon from "../../assets/skills/backend/mysql.png";
+import redisIcon from "../../assets/skills/backend/redis.png";
 
 // Import Icons for Frontend
-import tsIcon from '../../assets/skills/frontend/ts.png';
-import reactIcon from '../../assets/skills/frontend/react.png';
-import muiIcon from '../../assets/skills/frontend/mui.png';
-import twIcon from '../../assets/skills/frontend/tailwind.png';
-import androidIcon from '../../assets/skills/frontend/android.png';
+import tsIcon from "../../assets/skills/frontend/ts.png";
+import reactIcon from "../../assets/skills/frontend/react.png";
+import muiIcon from "../../assets/skills/frontend/mui.png";
+import twIcon from "../../assets/skills/frontend/tailwind.png";
+import androidIcon from "../../assets/skills/frontend/android.png";
 
 // Import Icons for kafka
-import kafkaIcon from '../../assets/skills/devops/kafka.png';
-import awsIcon from '../../assets/skills/devops/aws.png';
-import jenkinsIcon from '../../assets/skills/devops/jenkins.png';
-import dockerIcon from '../../assets/skills/devops/docker.png';
-import nginxIcon from '../../assets/skills/devops/nginx.png';
+import kafkaIcon from "../../assets/skills/devops/kafka.png";
+import awsIcon from "../../assets/skills/devops/aws.png";
+import jenkinsIcon from "../../assets/skills/devops/jenkins.png";
+import dockerIcon from "../../assets/skills/devops/docker.png";
+import nginxIcon from "../../assets/skills/devops/nginx.png";
 
-import Bookstore from '../../assets/project/bookstore.png'
-import NLUMovies from '../../assets/project/nlu-movies.png'
-import VideoSharingFrontend from '../../assets/project/video-sharing-front-end.png'
-import VideoSharingBackend from '../../assets/project/video-sharing-back-end.png'
+import Bookstore from "../../assets/project/bookstore.png";
+import NLUMovies from "../../assets/project/nlu-movies.png";
+import VideoSharingFrontend from "../../assets/project/video-sharing-front-end.png";
+import VideoSharingBackend from "../../assets/project/video-sharing-back-end.png";
 import { BookOpenText, Clapperboard, TabletSmartphone } from "lucide-react";
-export function ProjectsBentoGrid() {
+import { ProjectGrid, ProjectGridItem } from "./ProjectItem";
 
+export function ProjectsBentoGrid() {
   return (
-    <BentoGrid className="md:auto-rows-[32rem]">
+    <ProjectGrid className="md:auto-rows-[32rem]">
       {items.map((item, i) => (
-        <BentoGridItem
+        <ProjectGridItem
           key={i}
           title={item.title}
           description={item.description}
@@ -41,7 +41,7 @@ export function ProjectsBentoGrid() {
           stack={item.stack}
         />
       ))}
-    </BentoGrid>
+    </ProjectGrid>
   );
 }
 
@@ -56,10 +56,19 @@ mind, emphasizing performance, maintainability, and extensibility to support fut
     image: Bookstore,
     time: "Mar 2025 - Present",
     stack: [
-      reactIcon, springBootIcon, nginxIcon, dockerIcon, jenkinsIcon, awsIcon, javaIcon, tsIcon, muiIcon, mysqlIcon
+      reactIcon,
+      springBootIcon,
+      nginxIcon,
+      dockerIcon,
+      jenkinsIcon,
+      awsIcon,
+      javaIcon,
+      tsIcon,
+      muiIcon,
+      mysqlIcon,
     ],
     className: "md:col-span-2",
-    link: "https://github.com/tuan0919/bookstore"
+    link: "https://github.com/tuan0919/bookstore",
   },
   {
     title: "NLU Movies - Frontend",
@@ -67,11 +76,9 @@ mind, emphasizing performance, maintainability, and extensibility to support fut
     icon: <Clapperboard className="text-[#FFDB00]" />,
     image: NLUMovies,
     time: "Jan 2025 - Jan 2025",
-    stack: [
-      reactIcon, javaIcon, tsIcon, androidIcon
-    ],
+    stack: [reactIcon, javaIcon, tsIcon, androidIcon],
     className: "md:col-span-1",
-    link: "https://github.com/tuan0919/nlu-movies"
+    link: "https://github.com/tuan0919/nlu-movies",
   },
   {
     title: "Shorty Videos - Frontend",
@@ -80,11 +87,9 @@ mind, emphasizing performance, maintainability, and extensibility to support fut
     icon: <TabletSmartphone className="text-[#FFDB00]" />,
     image: VideoSharingFrontend,
     time: "Sep 2024 - Jan 2025",
-    stack: [
-      reactIcon, androidIcon, javaIcon, tsIcon, twIcon
-    ],
+    stack: [reactIcon, androidIcon, javaIcon, tsIcon, twIcon],
     className: "md:col-span-1",
-    link: "https://github.com/tuan0919/my-video-streaming-app-ui"
+    link: "https://github.com/tuan0919/my-video-streaming-app-ui",
   },
   {
     title: "Shorty Videos - Backend",
@@ -96,9 +101,16 @@ Additionally, real-world implementation aspects such as distributed transactions
     image: VideoSharingBackend,
     time: "Sep 2024 - Jan 2025",
     stack: [
-      springBootIcon, dockerIcon, jenkinsIcon, awsIcon, javaIcon, redisIcon, kafkaIcon, mysqlIcon
+      springBootIcon,
+      dockerIcon,
+      jenkinsIcon,
+      awsIcon,
+      javaIcon,
+      redisIcon,
+      kafkaIcon,
+      mysqlIcon,
     ],
     className: "md:col-span-2",
-    link: "https://github.com/tuan0919/my-video-streaming-app"
+    link: "https://github.com/tuan0919/my-video-streaming-app",
   },
 ];

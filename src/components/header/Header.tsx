@@ -23,10 +23,12 @@ function Header() {
 
   return (
     <header className="fixed border-b top-0 z-[99999] bg-white dark:bg-[#0d121c] w-full h-[3.5rem] flex items-center justify-between px-4 md:px-12 py-2">
-      <div className="flex items-center w-1/2 gap-12">
+      <div className="flex items-center gap-2 md:gap-12">
         {/** Logo */}
         <Logo />
-
+        <div className="md:hidden font-bold text-black dark:text-white">
+          Hello friend
+        </div>
         {/** navigation links */}
         <div className="hidden md:flex gap-2">
           {navigationLinks.map((link, index) => {
@@ -35,10 +37,16 @@ function Header() {
               <div
                 key={index}
                 className={`flex capitalize cursor-pointer border-2 text-sm px-3 py-1.5 rounded-sm font-ubuntu transition-all duration-200
-                  ${isActive ? "bg-[#FFDB00] border-black dark:border-transparent text-black" : "hover:bg-zinc-100 border-transparent dark:hover:bg-gray-800"}
+                  ${
+                    isActive
+                      ? "bg-[#FFDB00] border-black dark:border-transparent text-black"
+                      : "hover:bg-zinc-100 border-transparent dark:hover:bg-gray-800"
+                  }
                 `}
               >
-                <a href={link.to} className="">{link.title}</a>
+                <a href={link.to} className="">
+                  {link.title}
+                </a>
               </div>
             );
           })}
@@ -109,23 +117,21 @@ function Header() {
                 );
               })}
 
-              {/** projects and resume link */}
-              <div className="w-3/4 flex flex-col gap-4 items-center justify-center text-center">
-                <Link to="/projects" className="font-poppins text-lg font-bold mx-auto py-1 rounded-md w-full text-zinc-800 dark:text-[#FFDB00] hover:bg-zinc-200 dark:hover:bg-[#0f1728]">
-                  Projects
-                </Link>
-                <Link to="/resume" className="font-poppins text-lg font-bold mx-auto py-1 rounded-md w-full text-zinc-800 dark:text-[#FFDB00] hover:bg-zinc-200 dark:hover:bg-[#0f1728]">
-                  Resume
-                </Link>
-              </div>
-
               {/** theme and social icons */}
               <div className="flex items-center justify-center gap-4 w-full mt-4">
                 <ThemeToggle />
-                <a href="https://github.com/tuan0919" target="_blank" className="hover:bg-zinc-200 dark:hover:bg-gray-800 transition-transform duration-300 ease-in-out rounded-md flex items-center justify-center w-[2.2rem] h-[2.2rem]">
+                <a
+                  href="https://github.com/tuan0919"
+                  target="_blank"
+                  className="hover:bg-zinc-200 dark:hover:bg-gray-800 transition-transform duration-300 ease-in-out rounded-md flex items-center justify-center w-[2.2rem] h-[2.2rem]"
+                >
                   <FaGithub className="w-[1.2rem] h-[1.2rem] text-zinc-800 dark:text-white" />
                 </a>
-                <a href="https://www.linkedin.com/in/nqat" target="_blank" className="hover:bg-zinc-200 dark:hover:bg-gray-800 transition-transform duration-300 ease-in-out rounded-md flex items-center justify-center w-[2.2rem] h-[2.2rem]">
+                <a
+                  href="https://www.linkedin.com/in/nqat"
+                  target="_blank"
+                  className="hover:bg-zinc-200 dark:hover:bg-gray-800 transition-transform duration-300 ease-in-out rounded-md flex items-center justify-center w-[2.2rem] h-[2.2rem]"
+                >
                   <FaLinkedin className="w-[1.2rem] h-[1.2rem] text-zinc-700 dark:text-white" />
                 </a>
               </div>

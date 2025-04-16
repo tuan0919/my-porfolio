@@ -1,7 +1,6 @@
 import { TypewriterEffectSmooth } from "../typewriter-effect";
 
 function HeadingTextAnimated() {
-
   const words = [
     {
       text: "First,",
@@ -30,7 +29,6 @@ function HeadingTextAnimated() {
       text: "code.",
     },
   ];
-
 
   return (
     <div className="flex flex-col items-center justify-center">
