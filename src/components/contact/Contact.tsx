@@ -12,7 +12,7 @@ function Contact() {
           description={`I’m currently looking for a intern opportunity for Web Developer.\nWhether you have a position opening or just want to say hi, my inbox is open for all!`}
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-5 mt-6">
+      <div className="flex flex-col items-center justify-center gap-5">
         <div>
           <img
             src={lightImg}

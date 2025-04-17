@@ -11,7 +11,7 @@ export const ProjectGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "flex flex-col flex-wrap md:grid md:auto-rows-[35rem] lg:auto-rows-[32rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
         className
       )}
     >
@@ -74,7 +74,7 @@ export const ProjectGridItem = ({
             {time}
           </div>
         </div>
-        <div className="flex gap-2 py-2">
+        <div className="flex gap-2 py-2 flex-wrap w-100">
           {stack?.map((str, index) => (
             <div
               key={index}

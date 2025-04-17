@@ -29,7 +29,7 @@ function Expertise() {
                         `}
               >
                 {/** text-section */}
-                <div className="w-1/2 h-full flex items-center">
+                <div className="md:w-1/2 h-full flex items-center">
                   <div
                     className={`${card.textColor} font-poppins font-semibold text-base md:text-xl px-1`}
                   >
@@ -43,8 +43,8 @@ function Expertise() {
                 </div>
 
                 {/** image-section */}
-                <div className="w-1/2 h-full">
-                  <div className="flex items-center justify-end w-[150px] h-[150px] md:w-[175px] md:h-[175px] lg:w-[200px] lg:h-[200px]">
+                <div className="flex-1 md:w-1/2 h-[10rem] md:h-full flex items-center justify-center">
+                  <div className="flex items-center justify-end w-[6rem] h-[6rem] md:w-[175px] md:h-[175px] lg:w-[200px] lg:h-[200px]">
                     <img
                       src={card.image}
                       alt={card.title}

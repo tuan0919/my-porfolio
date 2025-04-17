@@ -8,7 +8,7 @@ import ProfileTagMarquee from "./components/profileTag-marquee";
 import Showcase from "./components/welcome-banner/Showcase";
 import Projects from "./components/work/Projects";
 import Resume from "./components/resume/Resume";
-import Contact from "./components/projects/Contact";
+import Contact from "./components/contact/Contact";
 import Notes from "./components/work/Notes";
 
 function App() {

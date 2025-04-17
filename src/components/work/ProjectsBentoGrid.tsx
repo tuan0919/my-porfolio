@@ -27,7 +27,7 @@ import { ProjectGrid, ProjectGridItem } from "./ProjectItem";
 
 export function ProjectsBentoGrid() {
   return (
-    <ProjectGrid className="md:auto-rows-[32rem]">
+    <ProjectGrid>
       {items.map((item, i) => (
         <ProjectGridItem
           key={i}

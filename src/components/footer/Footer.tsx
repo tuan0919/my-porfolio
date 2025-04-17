@@ -19,9 +19,7 @@ function Footer() {
         <div className="flex items-center justify-between">
           <div className="flex gap-2 items-center">
             <Logo />
-            <div className="font-bold text-black dark:text-white">
-              Hello friend
-            </div>
+            <div className="font-bold text-white">Hello friend</div>
           </div>
           <div className="md:flex hidden items-center md:gap-4">
             {navigationLinks.map((link, index) => {
