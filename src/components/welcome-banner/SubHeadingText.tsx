@@ -10,7 +10,7 @@ function SubHeadingText() {
         <span className="font-medium font-montserrat text-[#222222] dark:text-[#222222] bg-[#FFDB00] dark:bg-[#FFDB00] p-[2.5px]">
           I am Nguyen Quoc Anh Tuan
         </span>
-        , a versatile individual. With a passion for learning I am dedicated to
+        a versatile individual. With a passion for learning I am dedicated to
         delivering high-quality results and contribute meaningful contribution
         to dev community.
       </h2>

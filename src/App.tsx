@@ -10,6 +10,7 @@ import Projects from "./components/work/Projects";
 import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import Notes from "./components/work/Notes";
+import AboutMe from "./components/about/AboutMe";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
                 flex flex-col 
                 gap-12 mt-14"
                 >
+                  <AboutMe />
                   <Expertise />
                   <Projects />
                   <Notes />
